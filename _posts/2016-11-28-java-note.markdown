@@ -1,0 +1,159 @@
+---
+layout:     post
+title:      "2016年11月28日 java基础笔记 Day01"
+subtitle:   "Java,Java EE Note"
+date:       2016-11-28
+author:     "Andreew"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - Java 基础
+    - Java
+    - 学习笔记
+---
+
+变量名：【JAVA_HOME】
+变量值：【D:\Program Files\Java\jdk1.7.0_51】
+
+在系统变量里面找到Path选择编辑：
+在最后添加 ｛%Java_Home%\bin;%Java_Home%\jre\bin;｝
+
+“变量名”：ClassPath
+“变量值”：.;%Java_Home%\bin;%Java_Home%\lib\dt.jar;%Java_Home%\lib\tools.jar;
+
+java环境配置适用于 Windows XP 7 10 
+
+dos操作界面称为命令行或者叫做控制台。
+闪动的叫光标。
+光标前面的叫做工作路径。
+创建文件或者修改文件在哪个文件夹下操作就是工作路径。
+
+dir:这个命令用来显示工作目录下的文件和文件夹。
+
+cls:清空命令行界面的显示。
+
+切换盘符：e:
+
+切换到工作路径：cd 工作路径,cd ..回到工作路径的父路径，cd \回到盘符根目录，
+
+创建文件夹：md 文件夹的名字。
+
+rd用来删除文件夹的。rd 文件夹名。只能删除空的文件夹。
+
+创建一个文本文件可以使用 notepad 文件名.txt
+
+删除一个文件 del 文件名。
+
+dir,cls,e:,cd,md,rd,notepad,del
+
+练习：
+1.复习老师讲的dos命名的使用。
+  可能出现问题：命令写错，不加空格，注意大小写最好都用小写。
+
+2.使用dos命令创建一个文件夹，
+  然后在这个文件夹中写入一个文本文档，
+  然后删除这个文本文档，
+  然后删除创建的文件夹。
+  （考虑：怎么输入中文文件名。）
+
+
+Java程序开发的基本步骤。
+1.使用纯文本编辑工具来编辑一个Java文件。
+  编译一个拓展名为java的纯文本文件，按照老师写的写。
+
+2.用javac命令编译这个Java文件。
+  javac Java文件名（带拓展名）
+  编译后如果没有错误会生成一个.class为拓展名的文件。
+  这个文件就是Java的二进制文件，可以看成是Java的可执行文件。
+  
+3.用java命令来运行这个Java文件编译后的文件。
+  java 文件名
+
+练习：
+写自己的helloworld。
+
+helloworld的分析：
+public class HelloWorld{
+    public static void main(String[] args){
+	System.out.println("你好！！！");
+    }
+}
+
+public：修饰符。下周再说。
+class：声明的是一个类型。下周再说。
+HelloWorld：类型名。类型名必须和.java文件的文件名相同。
+{}:类体。代码都是写在这个里面的。
+public static void main(String[] args){
+	System.out.println("你好！！！");
+    }
+这块叫做方法。程序执行的第一步。main就是进入程序的门户，程序执行的起点。
+
+public static:方法的修饰符。下周再说。
+void：方法的返回值类型。下周再说。
+main：方法的名字。下周再说。
+（String[] args）叫做参数表。下周再说。
+{}：方法体。方法需要执行的代码。
+
+System.out.println("你好！！！");叫做语句。
+具体实现程序功能的代码。
+
+方法体中的代码可以有许多条语句。
+语句按照顺序先后执行（顺序执行）。
+
+Java是区分大小写。
+
+public static void main(String[] args)这个方法是必须要有的。
+
+把犯的每个错误记录下来。
+记录出错情况和解决过程。
+出错的解决：
+1.看错误提示。
+2.根据错误提示自己排查错误。
+3.查找相关资料。
+4.找学得好的同学。
+5.找实训经理。
+
+作为一个Java程序：
+1.至少要有一个有main方法的public的类型。
+2.主方法必须用这个方式来写：public static void main(String[] args)
+3.不包含main方法的文件也可以编译通过，但是不能够用Java指令运行。
+4.编程的时候可以用中文，没有语法错误，但是请不要用中文，请用纯英文。
+
+今天的内容：
+1.我们的课程体系。
+  996。
+2.80,60。
+3.JDK的安装。
+4.Dos命令。
+5.HelloWorld。
+
+####作业：
+1.练习安装和卸载jdk。至少重复5次。
+2.练习编写HelloWorld。
+
+####明天内容：
+1.注释。
+2.转义字符。
+3.变量。
+4.常量。
+5.运算符。
+
+
+
+> 第一天，基本没有高深内容
+
+
+> ：
+
+
+
+> ：推荐
+
+#### 推荐
+个人推荐：《Java实战经典》李兴华。
+
+
+#### 声明
+只是转载了老师讲课的内容
+
+
+

@@ -1,0 +1,97 @@
+# Site settings
+title: Andrew Lucian Lu
+SEOTitle: 砌墙的艺术 | Andrew Lucian Lu Blog
+header-img: img/home-bg.jpg
+email: wlty17173@gmail.com
+description: "关于零碎啰嗦杂乱的博客，慢慢来。||村口砌墙鲁师傅"
+keyword: "编程, 故事, 吹牛, 历史, 玄学, Steam, Andrew Lucian Lu的博客, Andrew Lucian Lu, 知乎, .Net, 微软, Google, 策划, 周易, 算命, 老罗, 回忆, 我的回忆, 远方"
+url: "http://restone.xyz"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: true
+weibo_username:     gamehistory
+zhihu_username:     gameart
+github_username:    andrewlucianlu
+twitter_username:  huxpro
+facebook_username:  huxpro
+linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 20
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: restone
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics 
+#baidu-analysis：
+ba_track_id: 6b67eb6353180809777e34d839c90301
+
+# Google Analytics
+ga_track_id: 'UA-87805342-1'            # Format: UA-xxxxxx-xx
+ga_domain: restone.xyz
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "一些文字，<br>总在心中久久不能离去!"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "Su",
+        href: "http://hewenjing.com/"
+    }
+]
