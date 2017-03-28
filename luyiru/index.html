@@ -4,14 +4,29 @@
 	<meta charset="UTF-8" />
 	<title>Document</title>
 	<style>
+		*{margin:0;padding:0;}
 		.zs-header{
-			color:red;
+			width:300px;
+			height:200px;
+			margin:60px auto;
+			color:#8a4596;
+			text-align:center;
+			line-height:200px;
+			cursor:pointer;
+		}
+		.bg2{
+			background:#eee;
 		}
 	</style>
 </head>
 <body>
-	<div class="zs-header">
-		<h2>Hello World</h2>
+	<div class="zs-header bg2">
+		<h2 onclick="zsclick()">Hello World</h2>
 	</div>
 </body>
+<script>
+	function zsclick(){
+		window.location.href="http://baidu.com"
+	}
+</script>
 </html>
